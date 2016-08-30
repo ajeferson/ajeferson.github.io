@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -80,21 +72,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('globals.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -110,7 +102,33 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div><ul>
+<div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>calculateClassProbability()
+: <a class="el" href="prediction_8c.html#a9b583bd2b3069f875205847188f48c97">prediction.c</a>
+, <a class="el" href="prediction_8h.html#a9b583bd2b3069f875205847188f48c97">prediction.h</a>
+</li>
+<li>calculateMean()
+: <a class="el" href="training_8c.html#a5f1afa8ef44d6c812542829d7f4acd26">training.c</a>
+, <a class="el" href="training_8h.html#a5f1afa8ef44d6c812542829d7f4acd26">training.h</a>
+</li>
+<li>calculateMetrics()
+: <a class="el" href="prediction_8c.html#a5837417003623949907468dda45121d1">prediction.c</a>
+, <a class="el" href="prediction_8h.html#a5837417003623949907468dda45121d1">prediction.h</a>
+</li>
+<li>calculateProbability()
+: <a class="el" href="prediction_8c.html#acb68e2233cb7c72fcb04623a0b297bc9">prediction.c</a>
+, <a class="el" href="prediction_8h.html#acb68e2233cb7c72fcb04623a0b297bc9">prediction.h</a>
+</li>
+<li>calculateStdev()
+: <a class="el" href="training_8c.html#a9fa4007fa50b4b002dacd3b366ba65ab">training.c</a>
+, <a class="el" href="training_8h.html#a9fa4007fa50b4b002dacd3b366ba65ab">training.h</a>
+</li>
+<li>calculateSummaries()
+: <a class="el" href="training_8c.html#ae037d5661afd9f9a6b3f15abf40d293d">training.c</a>
+, <a class="el" href="training_8h.html#ae037d5661afd9f9a6b3f15abf40d293d">training.h</a>
+</li>
 <li>CLASSES
 : <a class="el" href="defines_8h.html#aa6df04fbcd3d2e5765447931df2c3d19">defines.h</a>
 </li>
@@ -123,27 +141,86 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>confusionMatrix
 : <a class="el" href="defines_8h.html#a5af5bc9ebd39b4415f195ede1e960694">defines.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>DATASET
 : <a class="el" href="defines_8h.html#af3ee25adbd35fc6585710848ffa8abe6">defines.h</a>
 </li>
 <li>DATASET_DIR
 : <a class="el" href="defines_8h.html#a667e91d9a18894f42dea839aa1c92117">defines.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>getAccuracy()
+: <a class="el" href="prediction_8c.html#a06bd6a37a6eccee16c32eefe662203a6">prediction.c</a>
+, <a class="el" href="prediction_8h.html#a06bd6a37a6eccee16c32eefe662203a6">prediction.h</a>
+</li>
+<li>getCrossAccuracy()
+: <a class="el" href="extra_8c.html#aaa082ebf32e57e0f04c63bf394fe127d">extra.c</a>
+, <a class="el" href="extra_8h.html#aaa082ebf32e57e0f04c63bf394fe127d">extra.h</a>
+</li>
+<li>getPrecision()
+: <a class="el" href="prediction_8c.html#a998633b2cfc33a7e4781780b4dfe11df">prediction.c</a>
+, <a class="el" href="prediction_8h.html#a998633b2cfc33a7e4781780b4dfe11df">prediction.h</a>
+</li>
+<li>getRecall()
+: <a class="el" href="prediction_8c.html#ae9a2387bb624f469338d6101949762b6">prediction.c</a>
+, <a class="el" href="prediction_8h.html#ae9a2387bb624f469338d6101949762b6">prediction.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>LINE_FEED_ASCII
 : <a class="el" href="defines_8h.html#a290765207f8695dbd64f6c626df89bb2">defines.h</a>
 </li>
 <li>LINES
 : <a class="el" href="defines_8h.html#a321ae946de24c36489276616d13c46cd">defines.h</a>
 </li>
+<li>loadFullDatasetFromCsv()
+: <a class="el" href="training_2csv_8c.html#ae422bc659f785ef4737bf2ff0a44adca">csv.c</a>
+, <a class="el" href="training_2csv_8h.html#ae422bc659f785ef4737bf2ff0a44adca">csv.h</a>
+</li>
+<li>loadSummariesFromCsv()
+: <a class="el" href="prediction_2csv_8c.html#a0d9eb21839ed61d91e837aab6bb4420a">csv.c</a>
+, <a class="el" href="prediction_2csv_8h.html#a0d9eb21839ed61d91e837aab6bb4420a">csv.h</a>
+</li>
+<li>loadTestsetFromCsv()
+: <a class="el" href="prediction_2csv_8c.html#a9593d9c9a497173ea1f7674a2a02e5cf">csv.c</a>
+, <a class="el" href="prediction_2csv_8h.html#a9593d9c9a497173ea1f7674a2a02e5cf">csv.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>main()
+: <a class="el" href="prediction_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main.c</a>
+</li>
 <li>means
 : <a class="el" href="defines_8h.html#aec0e6d91cf8d42896fa1e6a35d3cd16a">defines.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>PI
 : <a class="el" href="defines_8h.html#a598a3330b3c21701223ee0ca14316eca">defines.h</a>
+</li>
+<li>predict()
+: <a class="el" href="prediction_8c.html#a4317c0c8596c2a1cc402ec29a532f511">prediction.c</a>
+, <a class="el" href="prediction_8h.html#a4317c0c8596c2a1cc402ec29a532f511">prediction.h</a>
 </li>
 <li>printConfusionMatrix()
 : <a class="el" href="util_8c.html#a3580193508faf8dc98261b8680e5935c">util.c</a>
 , <a class="el" href="util_8h.html#a3580193508faf8dc98261b8680e5935c">util.h</a>
+</li>
+<li>printMetrics()
+: <a class="el" href="prediction_8c.html#a55f763f10a5badda20d41ae22baf675c">prediction.c</a>
+, <a class="el" href="prediction_8h.html#a55f763f10a5badda20d41ae22baf675c">prediction.h</a>
 </li>
 <li>printSummaries()
 : <a class="el" href="util_8c.html#a34a327ab53fe026efb0c88104a211156">util.c</a>
@@ -157,8 +234,20 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="util_8c.html#ab557480d319e632079013f1a07f8bceb">util.c</a>
 , <a class="el" href="util_8h.html#ab557480d319e632079013f1a07f8bceb">util.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>RANDOM_SETS
 : <a class="el" href="defines_8h.html#a50ba672abc79f7fff6c39588157be19c">defines.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>showOff()
+: <a class="el" href="extra_8c.html#a4502522a0779e80eff1f673c7579406c">extra.c</a>
+, <a class="el" href="extra_8h.html#a4502522a0779e80eff1f673c7579406c">extra.h</a>
 </li>
 <li>stdevs
 : <a class="el" href="defines_8h.html#af3239e01edb36a7156ca84e848f9480f">defines.h</a>
@@ -166,6 +255,10 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>SUMMARIES_DIR
 : <a class="el" href="defines_8h.html#abc4bfafb7adf8d6ac7b1cb5c8981a59b">defines.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>TEST_LINES
 : <a class="el" href="defines_8h.html#ae4873e864ff78b5c86da84cc86db6e8d">defines.h</a>
 </li>
@@ -185,15 +278,30 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="defines_8h.html#ac2f8bb3e394c5bd3ea301577e6d7c0c4">defines.h</a>
 </li>
 </ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>writeMatrixToFile()
+: <a class="el" href="prediction_2csv_8c.html#acaca22554487aa9aa80d1eb20395a384">csv.c</a>
+, <a class="el" href="prediction_2csv_8h.html#acaca22554487aa9aa80d1eb20395a384">csv.h</a>
+, <a class="el" href="training_2csv_8c.html#acaca22554487aa9aa80d1eb20395a384">csv.c</a>
+, <a class="el" href="training_2csv_8h.html#acaca22554487aa9aa80d1eb20395a384">csv.h</a>
+</li>
+<li>writeSummariesToCsv()
+: <a class="el" href="training_2csv_8c.html#af6841540869d9f7279c1a2c166cd8168">csv.c</a>
+, <a class="el" href="training_2csv_8h.html#af6841540869d9f7279c1a2c166cd8168">csv.h</a>
+</li>
+<li>writeTestsetToCsv()
+: <a class="el" href="training_2csv_8c.html#a33bce0f477e7c4e033c04601b4c12dfb">csv.c</a>
+, <a class="el" href="training_2csv_8h.html#a33bce0f477e7c4e033c04601b4c12dfb">csv.h</a>
+</li>
+</ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

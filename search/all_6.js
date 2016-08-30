@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['random_5fsets',['RANDOM_SETS',['../defines_8h.html#a50ba672abc79f7fff6c39588157be19c',1,'defines.h']]]
+  ['naive_20bayes',['Naive Bayes',['../md_C:_Users_TARDIS_Desktop_Compartilhados_-_Ubuntu_NaiveBayes_README.html',1,'']]]
 ];

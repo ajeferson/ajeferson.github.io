@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['pi',['PI',['../defines_8h.html#a598a3330b3c21701223ee0ca14316eca',1,'defines.h']]],
-  ['printconfusionmatrix',['printConfusionMatrix',['../util_8c.html#a3580193508faf8dc98261b8680e5935c',1,'printConfusionMatrix():&#160;util.c'],['../util_8h.html#a3580193508faf8dc98261b8680e5935c',1,'printConfusionMatrix():&#160;util.c']]],
-  ['printsummaries',['printSummaries',['../util_8c.html#a34a327ab53fe026efb0c88104a211156',1,'printSummaries():&#160;util.c'],['../util_8h.html#a34a327ab53fe026efb0c88104a211156',1,'printSummaries():&#160;util.c']]],
-  ['printtestset',['printTestset',['../util_8c.html#a7b320a2d8087a30518acda1718be8e3b',1,'printTestset():&#160;util.c'],['../util_8h.html#a7b320a2d8087a30518acda1718be8e3b',1,'printTestset():&#160;util.c']]],
-  ['printtestsetline',['printTestSetLine',['../util_8c.html#ab557480d319e632079013f1a07f8bceb',1,'printTestSetLine(int line):&#160;util.c'],['../util_8h.html#ab557480d319e632079013f1a07f8bceb',1,'printTestSetLine(int line):&#160;util.c']]]
+  ['main',['main',['../prediction_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.c'],['../training_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.c']]],
+  ['main_2ec',['main.c',['../training_2main_8c.html',1,'']]],
+  ['main_2ec',['main.c',['../prediction_2main_8c.html',1,'']]],
+  ['means',['means',['../defines_8h.html#aec0e6d91cf8d42896fa1e6a35d3cd16a',1,'defines.h']]]
 ];
