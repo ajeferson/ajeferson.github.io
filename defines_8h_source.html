@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>NaiveBayes: defines.h Source File</title>
+<title>Naive Bayes: C:/Users/TARDIS/Desktop/Compartilhados - Ubuntu/NaiveBayes/defines.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">NaiveBayes
+   <div id="projectname">Naive Bayes
    </div>
   </td>
  </tr>
@@ -65,6 +73,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('defines_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,11 +107,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="defines_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef UNTITLED_DEFINES_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define UNTITLED_DEFINES_H</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="defines_8h.html#aa23ec884d0f2dd40fde5303aa9568a91">   13</a></span>&#160;<span class="preprocessor">#define COMMA_ASCII 44                          </span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="defines_8h.html#a290765207f8695dbd64f6c626df89bb2">   14</a></span>&#160;<span class="preprocessor">#define LINE_FEED_ASCII 10                      </span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="defines_8h.html#a406ac139c70831213b819318b528fc89">   15</a></span>&#160;<span class="preprocessor">#define TRAINING_RATIO 0.8                      </span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="defines_8h.html#a50ba672abc79f7fff6c39588157be19c">   16</a></span>&#160;<span class="preprocessor">#define RANDOM_SETS 0                           </span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="defines_8h.html#a598a3330b3c21701223ee0ca14316eca">   17</a></span>&#160;<span class="preprocessor">#define PI 3.141592653589793                    </span></div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="defines_8h.html#a667e91d9a18894f42dea839aa1c92117">   19</a></span>&#160;<span class="preprocessor">#define DATASET_DIR &quot;../datasets/full&quot;          </span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="defines_8h.html#a53321b2449d7d583df8efb55901ba5a7">   20</a></span>&#160;<span class="preprocessor">#define TESTSET_DIR &quot;../datasets/test&quot;          </span></div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="defines_8h.html#abc4bfafb7adf8d6ac7b1cb5c8981a59b">   21</a></span>&#160;<span class="preprocessor">#define SUMMARIES_DIR &quot;../datasets/summaries&quot;   </span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="defines_8h.html#af3ee25adbd35fc6585710848ffa8abe6">   27</a></span>&#160;<span class="preprocessor">#define DATASET &quot;mfeat&quot;                         </span></div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="defines_8h.html#a321ae946de24c36489276616d13c46cd">   28</a></span>&#160;<span class="preprocessor">#define LINES 2000                              </span></div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="defines_8h.html#a06c6c391fc11d106e9909f0401b255b1">   29</a></span>&#160;<span class="preprocessor">#define COLUMNS 77                              </span></div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="defines_8h.html#aa6df04fbcd3d2e5765447931df2c3d19">   30</a></span>&#160;<span class="preprocessor">#define CLASSES 10                              </span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">//#define DATASET &quot;urbanland&quot;</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//#define LINES 168</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//#define COLUMNS 148</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//#define CLASSES 9</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//#define DATASET &quot;libras&quot;</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//#define LINES 240</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//#define COLUMNS 91</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//#define CLASSES 10</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="defines_8h.html#a58f2402b7e26ed682609fce7ca1c488e">   50</a></span>&#160;<span class="preprocessor">#define TRAINING_LINES ((int) ((LINES * TRAINING_RATIO) + 1))       </span></div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="defines_8h.html#ae4873e864ff78b5c86da84cc86db6e8d">   51</a></span>&#160;<span class="preprocessor">#define TEST_LINES (LINES - TRAINING_LINES)                         </span></div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="defines_8h.html#ac2f8bb3e394c5bd3ea301577e6d7c0c4">   53</a></span>&#160;<span class="preprocessor">float trainingSet[TRAINING_LINES][COLUMNS];                         </span></div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="defines_8h.html#ad8e40b761d5637224bc8a65d9947b1b5">   54</a></span>&#160;<span class="preprocessor">float testSet[TEST_LINES][COLUMNS];                                 </span></div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="defines_8h.html#aec0e6d91cf8d42896fa1e6a35d3cd16a">   55</a></span>&#160;<span class="preprocessor">float means[CLASSES][COLUMNS - 1];                                  </span></div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="defines_8h.html#af3239e01edb36a7156ca84e848f9480f">   56</a></span>&#160;<span class="preprocessor">float stdevs[CLASSES][COLUMNS - 1];                                 </span></div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="defines_8h.html#a5af5bc9ebd39b4415f195ede1e960694">   57</a></span>&#160;<span class="preprocessor">int confusionMatrix[CLASSES][CLASSES];                              </span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif //UNTITLED_DEFINES_H</span></div></div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f14ec8d668ce5568793d5a0caef7e4e0.html">NaiveBayes</a></li><li class="navelem"><a class="el" href="defines_8h.html">defines.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['extra_2ec',['extra.c',['../extra_8c.html',1,'']]],
-  ['extra_2eh',['extra.h',['../extra_8h.html',1,'']]]
+  ['line_5ffeed_5fascii',['LINE_FEED_ASCII',['../defines_8h.html#a290765207f8695dbd64f6c626df89bb2',1,'defines.h']]],
+  ['lines',['LINES',['../defines_8h.html#a321ae946de24c36489276616d13c46cd',1,'defines.h']]]
 ];
