@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Naive Bayes: Main Page</title>
+<title>Naive Bayes: Naive Bayes</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -75,10 +74,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Naive Bayes Documentation</div>  </div>
+<div class="title">Naive Bayes </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>This is a c implementation of the Machine Learning algorithm called Naive Bayes Gaussian. It's been adapted from the python version in: <a href="http://machinelearningmastery.com/naive-bayes-classifier-scratch-python/">Naive Bayes Classifier from Scratch in Python</a>. This algorithm was developed to be used in the Embbeded System Module at IFCE to be run in an <b>ARM9 platform</b>.</p>
+<p>This algorithm is divided into two steps:</p><ul>
+<li><b>Training</b>, where the dataset will be used to generate the summaries (means and standard deviation) intermediate dataset. This phase happens in a computer.</li>
+<li><b>Prediction</b>, where the intermediate dataset + testset will be use to generate the predictions. The prediction phase is the one that runs in the ARM9 platform</li>
+</ul>
+<h2>1) Compiling</h2>
+<p>To get it up and running in a computer, execute the following steps:</p><ol type="1">
+<li>Select a dataset by commenting/uncommenting the datasets define section at the <em><a class="el" href="defines_8h.html" title="This file contains all the global variables that are used on the entire program, in both training and...">defines.h</a></em> file;</li>
+<li>Run the <em><a class="el" href="training_2main_8c.html" title="This file is the entry point to run the training module. Just run the main function to get it up and ...">training/main.c</a></em> file to generate the training files; This can also be done by running <em>make -f makefile</em> inside the training folder</li>
+<li>Run the <em><a class="el" href="prediction_2main_8c.html" title="Main program body, entry point for the prediction module. ">prediction/main.c</a></em> file to see the classification report (accuracy, recall, precision etc); This can also be done by running <em>make -f makefile</em> inside the prediction folder</li>
+<li>Run your program by typing _./main_ inside the prediction folder</li>
+</ol>
+<p>To compile the code for the ARM9 plataform:</p><ul>
+<li>Repeat the steps 1 and 2 in a PC</li>
+<li>Run the command <b>arm-linux-gcc main.c <a class="el" href="prediction_8c.html" title="This file contains functions that execute predictions, test accuracy etc on the knowledge (summaries)...">prediction.c</a> extras.c csv.c -o main -lm</b> from within the prediction folder in a PC with the ARM compiler</li>
+<li>In the ARM platform simply run your program by typing _./main_ from within the prediction folder</li>
+</ul>
+<h2>2) Project organization</h2>
+<p>The project was organized based on the <em>STM32F Peripheral Library examples</em> provided by <b>STMicroeletronics</b> followig these guidelines:</p><ul>
+<li>Each .c file has an .h file with the functions headers</li>
+<li>The functions were separated according to their purposes</li>
+<li>The comments can be used to generate automatic documentation</li>
+</ul>
+<h2>3) Project structure</h2>
+<p><em>The project folder structure is defined as follows:</em></p><ul>
+<li><b>NaiveBayes</b> - root folder<ul>
+<li><b>prediction</b> - this folder contains the code used to make the predictions (these are the files that execute the algorithm that runs in the ARM platform)</li>
+<li><b>testers</b> - this folder contains the codes for the test code (python with library and original python code)</li>
+<li><b>training</b> - this folder contains the code used to generate the summaries and test set</li>
+<li><b>datasets</b> - this folder contains all datasets that will be used throughout the execution<ul>
+<li><b>full</b> - this folder contains the full version of the datasets to be used</li>
+<li><b>summaries</b> - this folder contains the summarised knowledge of the classifier (means and standard deviation for each class and attribute)</li>
+<li><b>test</b> - this folder contains the test set to be classified </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
